@@ -16,6 +16,10 @@ p {
     font-weight: bold;
 }
 
+h2 {
+    font-weight: bold;
+}
+
 .site-header {
  background-image: linear-gradient(
     to bottom,
@@ -26,7 +30,7 @@ p {
         rgb(56, 86, 218)
   ) !important;
       border-bottom: 4px solid  rgb(56, 86, 218);
-    padding-bottom: 0.5rem;
+    padding-bottom: 2rem;
 }
 
 .top-bar {

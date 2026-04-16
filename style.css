@@ -242,6 +242,17 @@ button {
     transition: color 0.2s ease;
 }
 
+.card-5 {
+    background:   rgb(56, 86, 218),
+        rgb(56, 86, 218),
+            rgb(235, 225, 83),
+            rgb(235, 225, 83),
+            rgb(253, 255, 124),
+        rgb(253, 255, 124)
+     !important;
+    border-bottom: 4px solid rgb(253, 255, 124)
+}
+
 .story-card p a:hover {
     color: #56, 86, 218;
     text-decoration: underline;

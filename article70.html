@@ -91,21 +91,7 @@
         their past, it begs the question: How do these rumors start? Perhaps the real horror is our ability to sway 
         so many minds, injecting fear through made-up stories of the past.</h4>
    
-
-
-
-        
-    
-
-    
-
-    
-
-     
-    
-  
-  
-       
+      
  <div class="button-row mb-3">
             <button>
             <div class="button-card">
@@ -156,6 +142,19 @@
             crossorigin="anonymous"
         ></script>
         <script>
+
+             let count = 0; 
+
+           function likePost() {
+            count++;
+            document.getElementById("likeCount").innerText= count;
+           }
+
+
+
+
+
+
             function updateCurrentDate() {
                 const dateElement = document.getElementById("current-date");
                 if (!dateElement) return;

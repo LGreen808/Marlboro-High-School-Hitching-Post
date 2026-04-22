@@ -67,30 +67,9 @@
 
   
      
-       
-   
 
-      
-
-  
-   
-
-
-
-        
-    
-
-    
-
-    
-
-     
-    
-  
-  
-       
  <div class="button-row mb-3">
-            <button>
+            <button onclick="likePost()">
             <div class="button-card">
                 <img src="img/likebutton2.png" class="likebutton">
                 <p>Like this article!</p>
@@ -139,6 +118,16 @@
             crossorigin="anonymous"
         ></script>
         <script>
+           let count = 0; 
+
+           function likePost() {
+            count++;
+            document.getElementById("likeCount").innerText= count;
+           }
+
+
+
+
             function updateCurrentDate() {
                 const dateElement = document.getElementById("current-date");
                 if (!dateElement) return;

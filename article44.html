@@ -75,12 +75,11 @@
             to win the La Liga title.</h4>
 
  <div class="button-row mb-3">
-            <button>
-            <div class="button-card">
-                <img src="img/likebutton2.png" class="likebutton">
-                <p>Like this article!</p>
-            </div>
-            </button>
+            <button class="button-card" onclick="likePost()">
+               <img src="img/likebutton2.png" class="likebutton">
+               <p>Like this article!</p>
+               <p>Likes: <span id="likeCount">0</span></p>
+           </button>
             <button>
             <div class="button-card">
                 <img src="img/linkbutton2.png" class="likebutton linkbutton">
@@ -122,7 +121,12 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
-        <script>
+        <script>         
+  let count = 0;
+          function likePost() {
+           count++;
+           document.getElementById("likeCount").innerText= count;
+          }
             function updateCurrentDate() {
                 const dateElement = document.getElementById("current-date");
                 if (!dateElement) return;
